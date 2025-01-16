@@ -129,24 +129,31 @@ class War_Game:
         self.deck = Deck()
         self.players = []
 
-        if num_players < 2:
+        if num_players < 1:
+            num_players = 1
+        elif num_players > 6:
             num_players = 6
 
 
-        if num_players < 2:
+        if num_players < 1:
+            num_players = 1
+
+
+        if num_players < 1:
 
             num_players = 6
 
-            num_players = 2
+            num_players = 1
 
- main
+
         elif num_players > 8:
             num_players = 6
 
-        if num_players < 2:
+        if num_players < 1:
             num_players = 6
         elif num_players > 10:
             num_players = 10
+
 main
         for i in range(num_players):
             name = "Player %d" % (i+1)
