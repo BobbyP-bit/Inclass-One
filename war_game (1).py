@@ -134,13 +134,17 @@ class War_Game:
 
 
         if num_players < 2:
+
+            num_players = 6
+
             num_players = 2
+
  main
         elif num_players > 8:
-            num_players = 8
+            num_players = 6
 
         if num_players < 2:
-            num_players = 2
+            num_players = 6
         elif num_players > 10:
             num_players = 10
 main
