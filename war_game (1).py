@@ -129,13 +129,18 @@ class War_Game:
         self.deck = Deck()
         self.players = []
 
-        if num_players < 3:
-            num_players = 3
+        if num_players < 2:
+            num_players = 6
+
+
+        if num_players < 2:
+            num_players = 2
+ main
         elif num_players > 8:
             num_players = 8
 
-        if num_players < 3:
-            num_players = 3
+        if num_players < 2:
+            num_players = 2
         elif num_players > 10:
             num_players = 10
 main
