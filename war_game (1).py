@@ -128,8 +128,8 @@ class War_Game:
     def __init__(self, num_players):
         self.deck = Deck()
         self.players = []
-        if num_players < 2:
-            num_players = 2
+        if num_players < 3:
+            num_players = 3
         elif num_players > 8:
             num_players = 8
         for i in range(num_players):
