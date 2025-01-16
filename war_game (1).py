@@ -131,8 +131,14 @@ class War_Game:
 
         if num_players < 1:
             num_players = 1
-        elif num_players > 6:
-            num_players = 6
+        elif num_players > 2:
+            num_players = 2
+
+
+        if num_players < 1:
+            num_players = 1
+        elif num_players > 2:
+            num_players = 2
 
 
         if num_players < 1:
@@ -141,18 +147,19 @@ class War_Game:
 
         if num_players < 1:
 
-            num_players = 6
+            num_players = 2
 
             num_players = 1
 
 
         elif num_players > 8:
-            num_players = 6
+            num_players = 2
 
         if num_players < 1:
-            num_players = 6
+            num_players = 2
         elif num_players > 10:
             num_players = 10
+
 
 main
         for i in range(num_players):
